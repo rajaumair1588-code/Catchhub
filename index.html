@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATCHUB</title>
+    <style>
+        /* ==========================================
+                                                 RESET
+                           ========================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+
+            font-family: "Montserrat", Arial, sans-serif;
+
+            color: #333;
+
+            background: #fff;
+
+            overflow-x: hidden;
+        }
+
+        img {
+            display: block;
+
+            max-width: 100%;
+
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+        /* ==========================================
+   STORE BUTTONS
+========================================== */
+
+        .store-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 10px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .store-link {
+
+            display: block;
+
+            width: 145px;
+        }
+
+
+        .store-link img {
+
+            width: 100%;
+
+            height: auto;
+        }
+
+        /* ==========================================
+   HERO SECTION
+========================================== */
+
+        .hero-section {
+
+            position: relative;
+
+            width: 100%;
+
+            min-height: 470px;
+
+            background:
+                radial-gradient(ellipse at center,
+                    #ffffff 0%,
+                    #f8f8f8 65%,
+                    #eeeeee 100%);
+
+            overflow: hidden;
+        }
+
+
+        /* Curved white bottom */
+
+        .hero-section::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: -10%;
+
+            bottom: -170px;
+
+            width: 120%;
+
+            height: 220px;
+
+            background: #fff;
+
+            border-radius: 50% 50% 0 0;
+
+        }
+
+
+        .hero-container {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 1150px;
+
+            min-height: 470px;
+
+            margin: auto;
+
+            padding: 50px 40px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 50px;
+        }
+
+
+
+        /* ==========================================
+   HERO CONTENT
+========================================== */
+
+        .hero-content {
+
+            width: 48%;
+
+            text-align: center;
+        }
+
+
+        .catchub-logo {
+
+            font-family: "Brush Script MT", cursive;
+
+            font-size: 70px;
+
+            font-weight: 500;
+
+            line-height: 1;
+
+            color: #e64b34;
+
+            margin-bottom: 25px;
+        }
+
+
+        .hero-content h1 {
+
+            font-size: 18px;
+
+            font-weight: 600;
+
+            letter-spacing: 5px;
+
+            color: #222;
+
+            margin-bottom: 10px;
+        }
+
+
+        .hero-content p {
+
+            font-size: 17px;
+
+            font-weight: 300;
+
+            color: #777;
+
+            margin-bottom: 35px;
+        }
+
+
+        /* ==========================================
+   HERO IMAGE
+========================================== */
+
+        .hero-image {
+
+            width: 52%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+
+        .hero-image img {
+
+            width: 100%;
+
+            max-width: 520px;
+        }
+
+
+
+        /* ==========================================
+   COMMON FEATURE SECTIONS
+========================================== */
+
+        .channels-section,
+        .messages-section,
+        .future-section {
+
+            position: relative;
+
+            width: 100%;
+
+            overflow: hidden;
+        }
+
+
+        .section-container {
+
+            max-width: 1150px;
+
+            min-height: 500px;
+
+            margin: auto;
+
+            padding: 45px 50px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 50px;
+        }
+
+
+        .section-image {
+
+            width: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .section-image img {
+
+            width: 100%;
+
+            max-width: 500px;
+
+            height: auto;
+        }
+
+
+        .section-content {
+
+            width: 50%;
+
+            text-align: center;
+        }
+
+
+        .section-content h2 {
+
+            font-size: 24px;
+
+            font-weight: 500;
+
+            letter-spacing: 6px;
+
+            color: #222;
+
+            margin-bottom: 22px;
+        }
+
+
+        .section-content p {
+
+            font-size: 20px;
+
+            line-height: 1.45;
+
+            font-weight: 300;
+
+            color: #777;
+        }
+
+
+        /* ==========================================
+   CHANNELS SECTION
+========================================== */
+
+        .channels-section {
+
+            background:
+                radial-gradient(ellipse at center,
+                    #ffffff 0%,
+                    #f7f7f7 100%);
+        }
+
+
+        .channels-section::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 120%;
+
+            height: 130px;
+
+            left: -10%;
+
+            bottom: -100px;
+
+            background: #fff;
+
+            border-radius: 50%;
+        }
+
+
+        .channels-content {
+
+            padding-right: 20px;
+        }
+
+
+
+        /* ==========================================
+   MESSAGES SECTION
+========================================== */
+
+        .messages-section {
+
+            background: #fff;
+        }
+
+
+        .messages-container {
+
+            min-height: 470px;
+        }
+
+
+        .messages-content {
+
+            order: 1;
+
+            padding-left: 20px;
+        }
+
+
+        .messages-image {
+
+            order: 2;
+        }
+
+
+               /* ==========================================
+                              FUTURE SECTION
+                ========================================== */
+
+        .future-section {
+
+            background:
+                radial-gradient(ellipse at center,
+                    #ffffff 0%,
+                    #f4f4f4 100%);
+
+            padding-bottom: 20px;
+        }
+
+
+        .future-image {
+
+            order: 1;
+        }
+
+
+        .future-content {
+
+            order: 2;
+        }
+
+
+        .future-section::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 120%;
+
+            height: 160px;
+
+            left: -10%;
+
+            bottom: -130px;
+
+            background: #fff;
+
+            border-radius: 50%;
+        }
+.future__icons{
+    margin-bottom: 22px;
+}
+
+
+                         /* ==========================================
+                                           DOWNLOAD SECTION
+                         ========================================== */
+
+        .download-section {
+
+            position: relative;
+
+            z-index: 2;
+
+            text-align: center;
+
+            background: #fff;
+
+            padding: 45px 20px 25px;
+        }
+
+
+        .download-section>p {
+
+            font-size: 18px;
+
+            font-weight: 400;
+
+            color: #444;
+
+            margin-bottom: 22px;
+        }
+
+
+
+                     /* ==========================================
+                                   CONTACT SECTION
+                     ========================================== */
+
+        .contact-section {
+
+            text-align: center;
+
+            padding: 20px 20px 25px;
+
+            background: #fff;
+        }
+
+        .footer-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            padding: 10px 20px 30px;
+        }
+
+        .footer-section img {
+            display: block;
+            max-width: 220px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .contact-section p {
+
+            font-size: 15px;
+
+            font-weight: 400;
+
+            color: #555;
+        }
+
+
+        .contact-section a {
+
+            color: #5da8dc;
+
+            font-weight: 400;
+
+            margin-left: 4px;
+        }
+
+
+
+                    /* ==========================================
+                                    TABLET
+                    ========================================== */
+
+        @media (max-width: 900px) {
+
+            .hero-container {
+
+                padding: 40px 25px;
+
+                gap: 25px;
+            }
+
+
+            .catchub-logo {
+
+                font-size: 58px;
+            }
+
+
+            .hero-content h1 {
+
+                font-size: 15px;
+
+                letter-spacing: 4px;
+            }
+
+
+            .hero-content p {
+
+                font-size: 15px;
+            }
+
+
+            .section-container {
+
+                padding: 45px 30px;
+
+                gap: 30px;
+            }
+
+
+            .section-content h2 {
+
+                font-size: 21px;
+
+                letter-spacing: 5px;
+            }
+
+
+            .section-content p {
+
+                font-size: 17px;
+            }
+
+        }
+
+
+                 /* ==========================================
+                                     MOBILE
+                 ========================================= */
+
+        @media (max-width: 650px) {
+
+            /* HERO */
+
+            .hero-section {
+
+                min-height: auto;
+            }
+
+
+            .hero-container {
+
+                min-height: auto;
+
+                padding: 55px 20px 70px;
+
+                flex-direction: column;
+
+                gap: 35px;
+            }
+
+
+            .hero-content {
+
+                width: 100%;
+            }
+
+
+            .hero-image {
+
+                width: 100%;
+            }
+
+
+            .catchub-logo {
+
+                font-size: 55px;
+            }
+
+
+            .hero-content h1 {
+
+                font-size: 12px;
+
+                letter-spacing: 3px;
+            }
+
+
+            .hero-content p {
+
+                font-size: 14px;
+
+                margin-bottom: 25px;
+            }
+
+
+            /* FEATURE SECTIONS */
+
+            .section-container {
+
+                min-height: auto;
+
+                padding: 60px 20px;
+
+                flex-direction: column;
+
+                gap: 35px;
+            }
+
+
+            .section-image {
+
+                width: 100%;
+
+                order: 1;
+            }
+
+
+            .section-content {
+
+                width: 100%;
+
+                order: 2;
+
+                padding: 0;
+            }
+
+
+            .section-content h2 {
+
+                font-size: 20px;
+
+                letter-spacing: 4px;
+
+                margin-bottom: 18px;
+            }
+
+
+            .section-content p {
+
+                font-size: 16px;
+
+                line-height: 1.6;
+            }
+
+
+            /* MESSAGES */
+
+            .messages-content {
+
+                order: 2;
+            }
+
+
+            .messages-image {
+
+                order: 1;
+            }
+
+
+            /* STORE BUTTONS */
+
+            .store-buttons {
+
+                gap: 8px;
+            }
+
+
+            .store-link {
+
+                width: 140px;
+            }
+
+
+            /* DOWNLOAD */
+
+            .download-section {
+
+                padding-top: 35px;
+            }
+
+
+            .download-section>p {
+
+                font-size: 16px;
+            }
+
+        }
+
+
+           /* ==========================================
+                      SMALL MOBILE
+            ========================================== */
+
+        @media (max-width: 400px) {
+
+            .catchub-logo {
+
+                font-size: 48px;
+            }
+
+
+            .hero-content h1 {
+
+                font-size: 10px;
+
+                letter-spacing: 2px;
+            }
+
+
+            .store-buttons {
+
+                flex-direction: column;
+            }
+
+
+            .store-link {
+
+                width: 155px;
+            }
+
+
+            .section-content h2 {
+
+                font-size: 18px;
+            }
+
+
+            .section-content p {
+
+                font-size: 15px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+                        <!-- ==========================================
+                                     SECTION 1 - HERO
+                         =========================================== -->
+
+    <section class="hero-section">
+
+        <div class="hero-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-content">
+
+
+                <div>
+                    <img src="logo.png" alt="Catchub">
+                </div>
+
+                <h1>
+                    WATCH. COMMUNICATE. CREATE...
+                </h1>
+
+                <p>
+                    Everything you need to socialise
+                </p>
+
+
+                <div class="store-buttons">
+
+                    <a href="#" class="store-link">
+
+                        <img src="play_store.png" alt="Available on Android">
+
+                    </a>
+
+                    <a href="#" class="store-link">
+
+                        <img src="app_store.png" alt="Download on App Store">
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="hero-image">
+                <img src="top_screens.png" alt="Catchub Mobile App Screens">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+                                      SECTION 2 - CHANNELS
+                         =========================================== -->
+
+    <section class="channels-section">
+
+        <div class="section-container">
+
+            <!-- PHONE IMAGES -->
+            <div class="section-image channels-image">
+
+                <img src="sec_screens.png" alt="Catchub channels">
+
+            </div>
+
+
+            <!-- TEXT -->
+            <div class="section-content channels-content">
+
+                <h2>
+                    CHANNELS
+                </h2>
+
+                <p>
+                    Enjoy the videos and music you love.<br>
+                    Create your own business<br>
+                    or entertainment channel.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         SECTION 3 - MESSAGES
+    =========================================== -->
+
+    <section class="messages-section">
+
+        <div class="section-container messages-container">
+
+            <!-- TEXT -->
+            <div class="section-content messages-content">
+
+                <h2>
+                    MESSAGES
+                </h2>
+
+                <p>
+                    Communicate seamlessly.<br>
+                    Create your own professional<br>
+                    or social group chat
+                </p>
+
+            </div>
+
+
+            <!-- PHONE IMAGES -->
+            <div class="section-image messages-image">
+
+                <img src="thhh_screens.png" alt="Catchub messages">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         SECTION 4 - IN FUTURE
+    =========================================== -->
+
+    <section class="future-section">
+
+        <div class="section-container">
+
+            <!-- PHONE IMAGES -->
+            <div class="section-image future-image">
+
+                <img src="for_screens.png" alt="Catchub future features">
+
+            </div>
+
+
+            <!-- TEXT -->
+            <div class="section-content future-content">
+
+            
+                <div class="future__icons">
+                    <img src="vectors.png" alt="Foods, Events, Party, Metro, Jobs, Housing, Places icons" />
+                </div>
+
+                <h2>
+                    IN FUTURE
+                </h2>
+
+                <p>
+                    Communicate seamlessly.<br>
+                    Create your own professional<br>
+                    or social group chat
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         SECTION 5 - DOWNLOAD
+    =========================================== -->
+
+    <section class="download-section">
+
+        <p>
+            For download click here:
+        </p>
+
+        <div class="store-buttons">
+
+            <a href="#" class="store-link">
+
+                <img src="play_store.png" alt="Available on Android">
+
+            </a>
+
+            <a href="#" class="store-link">
+
+                <img src="app_store.png" alt="Download on App Store">
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         SECTION 6 - CONTACT
+    =========================================== -->
+
+    <section class="contact-section">
+
+        <p>
+            Any questions? Feel free to
+            <a href="#">
+                CONTACT US
+            </a>
+        </p>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         SECTION 7 - FOOTER
+    =========================================== -->
+
+    <footer class="footer-section">
+
+        <img src="peratude.png" alt="Peratude">
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
